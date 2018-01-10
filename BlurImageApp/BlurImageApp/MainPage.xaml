@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BlurImageApp"
+             x:Class="BlurImageApp.MainPage"
+             xmlns:controls="clr-namespace:BlurImageApp"
+             Title="Blurred Image ">
+    <ContentPage.Content>
+        <Grid>
+            <AbsoluteLayout>
+                <controls:BlurredImage AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                                       InputTransparent="false" x:Name="artwork" 
+                    HorizontalOptions="FillAndExpand" Aspect="Fill" VerticalOptions="FillAndExpand" Source="icon"/>
+            </AbsoluteLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Label Text="Blurred Image Demo" TextColor="Black" 
+                       FontAttributes="Bold" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+                <Image Source="icon" Aspect="Fill" VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"/>
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
